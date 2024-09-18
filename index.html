@@ -6,7 +6,10 @@
 -->
 <html>
 	<head>
-	
+	<div class="header-images">
+        <img src="/path/to/image1.jpg" alt="Abderahmane Kateb portrait 1" class="header-image">
+        <img src="/path/to/image2.jpg" alt="Abderahmane Kateb portrait 2" class="header-image">
+    	</div>
 		
 		<title>Abderahmane Kateb</title>
 		<meta charset="utf-8" />
@@ -216,5 +219,20 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+<style>
+	header-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
 
+.header-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+</style>
 </html>
